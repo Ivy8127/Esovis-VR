@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/static/css/sites.css" />
+    <link rel="icon" href="/static/images/logo2.png">
+    <title>Historical Sites</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="{% url 'home' %}">
+          <img
+            src="{% static 'images/logo2.png' %}"
+            width="112"
+            height="28"
+            alt="VRTours"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'shop' %}"
+                >Store <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'home' %}"
+                >Country <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'home' %}"
+                >City <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'historical_sites' %}"
+                >Historical Sites <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'home' %}"
+                >Contact Us <span class="sr-only">(current)</span></a
+              >
+            </li>
+          </ul>
+          <div class="form-inline my-2 my-lg-0 ">
+            <a href="#" class="btn" style=" color: white;">Sign Up</a>
+            <a href="{% url 'login'%}" class="btn" style=" color: white;">Login</a>
+  
+            <a href="{% url 'cart' %}">
+              <img id="cart-icon" src="{% static 'images/cart.png' %}"  style=" 
+              width:25px;
+	            display: inline-block;
+	         margin-left: 15px;"/>
+            </a>
+            <p id="cart-total" style="display: block;
+            text-align: center;
+            color:#fff;
+            background-color: red;
+            width: 20px;
+            height: 25px;
+            border-radius: 50%;
+            font-size: 14px;">{{cartItems}}</p>
+            
+          </div>
+        </div>
+      </nav>
+      <div class="row">
+        <div class="column">
+            <img src="/static/images/alexa-west-OOTEpsO2eV0-unsplash_1.jpg " />
+            <img src="/static/images/joshua-earle-ICE__bo2Vws-unsplash (1).jpg" />
+            <img src="/static/images/matthias-schroder-KoBCaTPydqs-unsplash_1.jpg" />
+            <img src="/static/images/sebastien-goldberg-BKLHxgbYFDI-unsplash_1.jpg" />
+            <img src="/static/images/sutirta-budiman-Jgiv1rSIpVM-unsplash (1).jpg" />
+            <img src="/static/images/matthias-schroder-KoBCaTPydqs-unsplash_1.jpg" />
+            <img src="/static/images/noaa-KmrRRPtestE-unsplash_1.jpg" />
+        </div>
+        <div class="column">
+            <img src="/static/images/noaa-KmrRRPtestE-unsplash_1.jpg" />
+            <img src="/static/images/sutirta-budiman-Jgiv1rSIpVM-unsplash (1).jpg" />
+            <img src="/static/images/sebastien-goldberg-BKLHxgbYFDI-unsplash_1.jpg" />
+            <img src="/static/images/alexa-west-OOTEpsO2eV0-unsplash_1.jpg " />
+            <img src="/static/images/noaa-KmrRRPtestE-unsplash_1.jpg" />
+            <img src="/static/images/matthias-schroder-KoBCaTPydqs-unsplash_1.jpg" />
+            <img src="/static/images/matthias-schroder-KoBCaTPydqs-unsplash_1.jpg" />
+        </div>
+        <div class="column">
+            <img src="/static/images/matthias-schroder-KoBCaTPydqs-unsplash_1.jpg" />
+            <img src="/static/images/sebastien-goldberg-BKLHxgbYFDI-unsplash_1.jpg" />
+            <img src="/static/images/alexa-west-OOTEpsO2eV0-unsplash_1.jpg " />
+            <img src="/static/images/sutirta-budiman-Jgiv1rSIpVM-unsplash (1).jpg" />
+            <img src="/static/images/alexa-west-OOTEpsO2eV0-unsplash_1.jpg" />
+            <img src="/static/images/noaa-KmrRRPtestE-unsplash_1.jpg" />
+            <img src="/static/images/noaa-KmrRRPtestE-unsplash_1.jpg" />
+        </div>
+        <div class="column">
+            <img src="/static/images/noaa-KmrRRPtestE-unsplash_1.jpg" />
+            <img src="/static/images/alexa-west-OOTEpsO2eV0-unsplash_1.jpg " />
+            <img src="/static/images/matthias-schroder-KoBCaTPydqs-unsplash_1.jpg" />
+            <img src="/static/images/alexa-west-OOTEpsO2eV0-unsplash_1.jpg" />
+            <img src="/static/images/alexa-west-OOTEpsO2eV0-unsplash_1.jpg " />
+            <img src="/static/images/sutirta-budiman-Jgiv1rSIpVM-unsplash (1).jpg" />
+            <img src="/static/images/noaa-KmrRRPtestE-unsplash_1.jpg" />
+        </div>
+        </div>
+      
+    
+    
+</body>
+</html>
+

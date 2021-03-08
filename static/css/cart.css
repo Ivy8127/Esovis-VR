@@ -95,25 +95,3 @@ h1,h2,h3,h4,h5,h6{
 .hidden{
     display: none!important;
 }
-.login{
-	margin-left: 0.5em;
-	color:#40e0d0;
-    
-}
-
-
-.login:hover{
-	background-color:blue ;
-	color: white !important;
-
-}
-.sign-in{
-	margin-left: 0.5em;
-	color:blue;
-    
-}
-.sign-in:hover{
-	background-color:#40e0d0 ;
-	color: white !important;
-
-}

@@ -1,5 +1,6 @@
-{% extends 'VRApp/base.html'%}
+{% extends 'VRApp/main.html'%}
 {% load static %}
+{% block title %}Home{% endblock %}
 
 {% block content%}
 
@@ -11,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" rel='stylesheet' type='text/css' />
-    <title>Your Cart</title>
     <style>
       body {
           background-image: linear-gradient(180deg,rgba(0,0,0,0) 0%,#000000 100%),url(images/7.jpg);
@@ -72,6 +72,7 @@
                     <a href="#" class="button is-white is-inverted">Next&ensp;<i class="fad fa-chevron-right"></i></a>
                   </div>
                 </div>
+                <!--
                 <div class="columns">
                   {% for product in products %}
                   <div class="column image">
@@ -80,7 +81,8 @@
                     <h3>{{product.price|floatformat:2}}</h3>
                     <a   class="add-cart cart1 " href="#">Add to Cart</a>
                   </div>
-                  {% endfor %}  
+                  {% endfor %} 
+                  --> 
                 </div>
               </div>
             </div>
