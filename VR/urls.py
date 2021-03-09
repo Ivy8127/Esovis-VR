@@ -22,8 +22,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('Esovis/', include('django.contrib.auth.urls')), #provides automatic django default authentication without having to write views
-    #path('/',TemplateView.as_view(template_name='home.html'), name='home'),
+    path('', include('django.contrib.auth.urls')), #provides automatic django default authentication without having to write views
     path('', include('VRApp.urls')),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root =settings.MEDIA_ROOT)
