@@ -22,6 +22,76 @@
     <link rel="stylesheet" href="/static/css/login.css" />
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="{% url 'home' %}">
+        <img
+          src="{% static 'images/logo2.png' %}"
+          width="112"
+          height="28"
+          alt="VRTours"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'shop' %}"
+              >Store <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'home' %}"
+              >Country <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'home' %}"
+              >City <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'historical_sites' %}"
+              >Historical Sites <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'home' %}"
+              >Contact Us <span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+        <div class="form-inline my-2 my-lg-0 ">
+          <a href="{% url 'signup'%}" class="btn" style=" color: white;">Sign Up</a>
+          <a href="{% url 'login'%}" class="btn" style=" color: white;">Login</a>
+  
+          <a href="{% url 'cart' %}">
+            <img id="cart-icon" src="{% static 'images/cart.png' %}"  style=" 
+            width:25px;
+            display: inline-block;
+         margin-left: 15px;"/>
+          </a>
+          <p id="cart-total" style="display: block;
+          text-align: center;
+          color:#fff;
+          width: 20px;
+          height: 25px;
+          border-radius: 50%;
+          font-size: 14px;">{{cartItems}}</p>
+          
+        </div>
+      </div>
+    </nav>
     <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
       <div class="container">
         <div class="card login-card">
