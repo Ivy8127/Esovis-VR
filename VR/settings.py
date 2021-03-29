@@ -138,4 +138,4 @@ LOGIN_REDIRECT_URL = '/' #redirect the user to home page upon succesful login, t
 LOGOUT_REDIRECT_URL = '/login/'
 
 
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

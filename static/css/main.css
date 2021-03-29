@@ -168,15 +168,16 @@ header{
   
   footer {
     color: white;
-    background: rgb(14, 14, 14) !important;
+    background: #604087 !important;
   }
   
   footer strong {
-    color: turquoise;
+    color:#E8CD77 ;
   }
   
   footer a {
-    color: turquoise;
+    color:#E8CD77 ;
+    
   }
   
   .title {

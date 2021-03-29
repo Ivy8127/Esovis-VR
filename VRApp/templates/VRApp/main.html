@@ -62,7 +62,10 @@
     </script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #604087"
+    >
       <a class="navbar-brand" href="{% url 'home' %}">
         <img
           src="{% static 'images/logo2.png' %}"
@@ -86,8 +89,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
+            <a class="nav-link" href="{% url 'home' %}"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
             <a class="nav-link" href="{% url 'shop' %}"
-              >Store <span class="sr-only">(current)</span></a
+              >Live Virtual Tours <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item active">
@@ -103,6 +111,16 @@
           <li class="nav-item active">
             <a class="nav-link" href="{% url 'historical_sites' %}"
               >Historical Sites <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'historical_sites' %}"
+              >Animal Parks <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'historical_sites' %}"
+              >Recreation Centers <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item active">

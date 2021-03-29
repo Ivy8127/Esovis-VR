@@ -75,4 +75,12 @@ body {
     .login-card-footer-nav a {
       font-size: 14px;
       color: #919aa3; }
-  
+.nav-item:hover{
+  background: linear-gradient(#C79F4E , #E8CD77);
+  border: none;
+}
+.form-inline .btn:hover{
+  background: linear-gradient(#C79F4E , #E8CD77);
+  border: none;
+
+}

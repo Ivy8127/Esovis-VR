@@ -95,3 +95,13 @@ h1,h2,h3,h4,h5,h6{
 .hidden{
     display: none!important;
 }
+
+.nav-item:hover{
+	background: linear-gradient(#C79F4E , #E8CD77);
+	border: none;
+}
+.form-inline .btn:hover{
+	background: linear-gradient(#C79F4E , #E8CD77);
+	border: none;
+
+}
