@@ -7,6 +7,23 @@ from django.db.models.signals import post_save
 
 
 # Create your models here.
+class Country(models.Model):
+    title = models.CharField(max_length = 30 , null=True)
+    description = models.TextField(max_length=300)
+    image = models.ImageField(null =True, blank =True)
+
+    def __str__(self):
+        return self.title
+
+    @property
+    def imageURL(self):
+        try:
+            url = self.image.url
+        except:
+            url = ''
+        return url           
+    
+
 class Customer(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, null= True, blank = True)
     name = models.CharField(max_length =200 ,null = True)
