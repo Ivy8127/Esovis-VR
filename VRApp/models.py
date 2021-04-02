@@ -7,6 +7,22 @@ from django.db.models.signals import post_save
 
 
 # Create your models here.
+class City(models.Model):
+    title = models.CharField(max_length = 50 , null=True)
+    description = models.TextField(max_length=300)
+    image = models.ImageField(null =True, blank =True)
+
+    def __str__(self):
+        return self.title
+
+    @property
+    def imageURL(self):
+        try:
+            url = self.image.url
+        except:
+            url = ''
+        return url  
+        
 class Country(models.Model):
     title = models.CharField(max_length = 30 , null=True)
     description = models.TextField(max_length=300)
