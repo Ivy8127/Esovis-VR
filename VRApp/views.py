@@ -13,6 +13,21 @@ from.utils import cookieCart, cartData ,guestOrder
 
 
 from .models import *
+
+def animalParks(request):
+    if request.user.is_authenticated:
+        customer = request.user.customer
+        order, created = Order.objects.get_or_create(customer=customer, complete =False)
+        items = order.orderitem_set.all()
+        cartItems = order.get_cart_items
+    else:
+        cookieData = cookieCart(request)
+        cartItems = cookieData['cartItems']
+        order = cookieData['order']
+        items = cookieData['items']
+    context ={'items':items,'order':order,'cartItems': cartItems  }
+    return render(request, 'VRApp/parks.html',context)
+    
 def cities(request,title):
     city = City.objects.get(title=title)
     if request.user.is_authenticated:
