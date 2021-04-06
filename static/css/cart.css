@@ -163,3 +163,38 @@ h6 {
       height: 11vw;
   }
 }
+.jumbotron-image-1 {
+  background-image: url("/static/images/blossoms.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.9;
+}
+.btnClass{
+  width: 200px;
+  background: linear-gradient(#C79F4E , #E8CD77);
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+  border: 2px solid white;
+}
+@media (min-width: 1200px) {
+  .spacing {
+      height: 30vw;
+  }
+}
+@media (min-width: 576px) {
+  .spacing {
+      height: 60vw;
+  }
+}
+@media (min-width: 768px) {
+  .spacing {
+      height: 50vw;
+  }
+}
+@media (min-width: 992px) {
+  .spacing {
+      height: 40vw;
+  }
+}
