@@ -1,5 +1,6 @@
 body {
   background-color: hsl(0, 0%, 98%);
+  overflow-x: hidden;
 }
 
 h1,
@@ -112,7 +113,13 @@ h6 {
   max-height: 200px;
   overflow-x: hidden;
 }
-
+.jumbotron{
+  margin-bottom: 0 !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
 .jumbotron-image {
   background-image: url("/static/images/tiger.jpg");
   background-size: cover;
@@ -125,9 +132,24 @@ h6 {
   text-transform: uppercase;
   font-weight: bold;
 }
+@media(min-width:200px){ 
+  .spacing h1{
+    font-size: 30px;}
+}
+@media(min-width:576px){ 
+  .spacing h1{
+    font-size:60px ;}
+}
+@media(min-width:768px){ 
+  .spacing h1{
+    font-size: 5.5rem;}
+}
+.spacing p{
+  color: white;
+}
 .box-shadow-hover {
-  transition: 0.3s
-   }
+  transition: 0.3s;
+}
 .box-shadow-hover:hover {
   transform: scale(1.01);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
@@ -141,26 +163,26 @@ h6 {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .card-img-top-c {
-      height: 21vw;
-      object-fit: cover;
+    height: 21vw;
+    object-fit: cover;
   }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .card-img-top-c {
-      height: 16vw;
+    height: 16vw;
   }
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .card-img-top-c {
-      height: 11vw;
+    height: 11vw;
   }
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 992px) {
   .card-img-top-c {
-      height: 11vw;
+    height: 11vw;
   }
 }
 .jumbotron-image-1 {
@@ -170,31 +192,144 @@ h6 {
   background-position: center;
   opacity: 0.9;
 }
-.btnClass{
-  width: 200px;
-  background: linear-gradient(#C79F4E , #E8CD77);
-  border-radius: 20px;
-  color: white;
-  font-size: 20px;
-  border: 2px solid white;
-}
 @media (min-width: 1200px) {
   .spacing {
-      height: 30vw;
+    height: 30vw;
+  }
+}
+@media (min-width: 375px) {
+  .spacing {
+    height: 60vw;
   }
 }
 @media (min-width: 576px) {
   .spacing {
-      height: 60vw;
+    height: 60vw;
   }
 }
 @media (min-width: 768px) {
   .spacing {
-      height: 50vw;
+    height: 60vw;
   }
 }
-@media (min-width: 992px) {
-  .spacing {
-      height: 40vw;
+.jumbotron-image-2 {
+  background-image: url("/static/images/hero-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #604087;
+}
+
+.flex-left {
+  flex: 25%;
+  margin: 20px;
+  padding: 30px;
+}
+.flex-left h3{
+  text-transform: uppercase;
+  color: white;
+}
+.flex-left h1{
+  font-weight: bolder;
+  font-size: 70px;
+  line-height: 70px;
+  color: white;
+}
+
+.flex-right {
+  flex: 75%;
+  margin: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+   color: white;
+}
+.flex-right h3{
+  color: white;
+}
+.flex-right-child-1{
+  flex: 50%;
+  margin: 10px;
+
+}
+.flex-right-child-2{
+  flex: 50%;
+  margin: 10px;
+}
+
+@media(max-width:700px){
+  .flex-right{
+    flex-direction: column;
+    
+  }
+  .flex-container{
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+
+.featured-live-tours{
+  margin: 20px 20px 0px 0px;
+  padding: 30px;
+}
+.featured-live-tours h3{
+  color: #604087;
+  text-transform: uppercase;
+}
+.featured-tour-image{
+  background-image: url('/static/images/biel-morro-d0xjEv-WJQk-unsplash_1.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.featured-tour-text{
+  padding: 20px;
+  text-align: center;
+}
+.featured-tour-text >h1{
+  color: white;
+  text-transform: uppercase;
+}
+.featured-tour-text p{
+  color: white;
+}
+@media(min-width:320px){
+  .container .featured-section ,.featured-tour-text h1{
+    font-size: 40px;
+  }
+}
+.featured-section{
+  margin-bottom: 30px;
+}
+.btnClass {
+  width: 200px;
+  background: linear-gradient(#c79f4e, #e8cd77);
+  font-size: 20px;
+  color: white;
+}
+.hero_btn{
+ width: 350px;
+ height: 50px;
+ background: linear-gradient(#c79f4e, #e8cd77);
+ color: white;
+ font-size: 20px;
+
+}
+@media(min-width:300px){
+  .hero_btn{
+    width: 280px;
   }
 }

@@ -1,4 +1,4 @@
-let carts = document.querySelectorAll('.add-cart');
+/* let carts = document.querySelectorAll('.add-cart');
 
 let products = [
     {
@@ -140,4 +140,4 @@ function displayCart() {
 }
 
 onLoadCartNumbers();
-displayCart();
+displayCart(); */
