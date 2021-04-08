@@ -1,6 +1,10 @@
+html{
+  scroll-behavior: smooth;
+}
 body {
   background-color: hsl(0, 0%, 98%);
   overflow-x: hidden;
+ 
 }
 
 h1,
@@ -476,3 +480,39 @@ h6 {
   }
 }
 
+@media (max-width: 567px) {
+
+  .footer {
+    height: 700px;
+  }
+}
+
+footer {
+padding-top: 50px;
+background-color: #604087;
+color: #bbb;
+height:400px;
+width:100%
+}
+
+
+
+footer a {
+color: white;
+text-decoration:none;
+}
+
+footer a:hover, footer a:focus {
+color: #e8cd77;
+text-decoration:none;
+border-bottom:1px dotted #e8cd77;
+}
+
+footer .form-control {
+  background-color: #fff;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none;
+  color: #d1d2d2;
+  padding: 0.7em 1em;
+}
