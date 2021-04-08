@@ -192,11 +192,7 @@ h6 {
   background-position: center;
   opacity: 0.9;
 }
-@media (min-width: 1200px) {
-  .spacing {
-    height: 30vw;
-  }
-}
+
 @media (min-width: 375px) {
   .spacing {
     height: 60vw;
@@ -209,11 +205,12 @@ h6 {
 }
 @media (min-width: 768px) {
   .spacing {
-    height: 60vw;
+    height: 50vw;
   }
 }
 .jumbotron-image-2 {
-  background-image: url("/static/images/hero-image.jpg");
+ 
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/static/images/hero-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -286,7 +283,7 @@ h6 {
   text-transform: uppercase;
 }
 .featured-tour-image{
-  background-image: url('/static/images/biel-morro-d0xjEv-WJQk-unsplash_1.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/static/images/biel-morro-d0xjEv-WJQk-unsplash_1.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -312,13 +309,14 @@ h6 {
   }
 }
 .featured-section{
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .btnClass {
   width: 200px;
   background: linear-gradient(#c79f4e, #e8cd77);
   font-size: 20px;
   color: white;
+  margin-top: 30px;
 }
 .hero_btn{
  width: 350px;
@@ -326,10 +324,155 @@ h6 {
  background: linear-gradient(#c79f4e, #e8cd77);
  color: white;
  font-size: 20px;
+ 
 
 }
 @media(min-width:300px){
   .hero_btn{
-    width: 280px;
+    width: 200px;
+    height: 35px;
+    font-size: 15px;
+    text-align: center;
   }
 }
+@media(min-width:768px){
+  .hero_btn{
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+@media(min-width:992px){
+  .hero_btn{
+    width: 350px;
+    height: 50px;
+    font-size:20px;
+    text-align: center;
+  }
+}
+.what_they_say{
+  text-align: center;
+  margin: 20px ;
+  padding: 40px 0px 0px 0px;
+}
+.what_they_say h3{
+  color: white;
+}
+.what_they_say hr{
+  border: 2px solid white;
+  width: 150px;
+  margin-bottom: 40px;
+}
+@media(min-width:320px){
+  .what_they_say h3{
+    font-size: 30px;
+  }
+}
+@media(min-width:768px){
+  .what_they_say h3{
+    font-size: 40px;
+  }
+}
+@media(min-width:992px){
+  .what_they_say h3{
+    font-size: 50px;
+  }
+}
+#demo {
+  max-width: 100%;
+  padding: 30px;
+  margin: auto;
+
+}
+.carousel-caption {
+  position: initial;
+  z-index: 10;
+  padding: 5rem 8rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 2rem
+}
+
+@media(max-width:767px) {
+  .carousel-caption {
+      position: initial;
+      z-index: 10;
+      padding: 3rem 2rem;
+      text-align: center;
+      font-size: 0.7rem;
+      font-weight: bold;
+      line-height: 1.5rem
+  }
+}
+
+.carousel-caption img {
+  width: 6rem;
+  border-radius: 5rem;
+  margin-top: 2rem
+}
+
+@media(max-width:767px) {
+  .carousel-caption img {
+      width: 4rem;
+      border-radius: 4rem;
+      margin-top: 1rem
+  }
+}
+
+#image-caption {
+  font-style: normal;
+  font-size: 1rem;
+  margin-top: 0.5rem
+}
+
+@media(max-width:767px) {
+  #image-caption {
+      font-style: normal;
+      font-size: 0.6rem;
+      margin-top: 0.5rem
+  }
+}
+
+.carousel-control-prev {
+  justify-content: flex-start
+}
+
+.carousel-control-next {
+  justify-content: flex-end
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  transition: none;
+  opacity: unset
+}
+.featured-tour-image-1{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/static/images/marabella.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(max-width:375px){
+  .upcoming_virtual_tours h1{
+    font-size: 2rem;
+  }
+  .upcoming_virtual_tours h3{
+    font-size: 0.5rem;
+  }
+}
+@media(max-width:576px){
+  .upcoming_virtual_tours h1{
+    font-size: 3rem;
+  }
+  .upcoming_virtual_tours h3{
+    font-size: 2rem;
+  }
+}
+
